@@ -20,10 +20,19 @@ describe('isEmailInUse', () => {
 
   it('should return the list of providers linked to the email', async () => {
     const providers = ['google.com', 'facebook.com'];
+
     (fetchSignInMethodsForEmail as jest.Mock).mockResolvedValue(providers);
 
     const { linkedProviders } = await isEmailInUse(email);
 
     expect(linkedProviders).toEqual(providers);
+  });
+
+  it('should throw an error if the email is not valid', async () => {
+    const error = new Error('The email is not valid');
+
+    (fetchSignInMethodsForEmail as jest.Mock).mockRejectedValue(error);
+
+    await expect(isEmailInUse(email)).rejects.toThrow(error);
   });
 });
