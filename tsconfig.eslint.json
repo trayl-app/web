@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["tests", "stories", "src", "next-env.d.ts"]
+}
