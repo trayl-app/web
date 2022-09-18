@@ -16,6 +16,7 @@ jobs:
         os: [ubuntu-latest, macos-latest]
 
     steps:
+      - run: npm config set '//npm.pkg.github.com/:_authToken' "${PAT_TOKEN}"
       - name: Checkout repo
         uses: actions/checkout@v3
         with:

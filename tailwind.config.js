@@ -104,6 +104,17 @@ module.exports = {
   mode: 'jit',
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   presets: [theme],
-  theme: {},
+  theme: {
+    fontFamily: {
+      satoshi: ['Satoshi', 'sans-serif'],
+    },
+    fontWeight: {
+      light: 300,
+      normal: 400,
+      medium: 500,
+      bold: 700,
+      black: 900,
+    },
+  },
   plugins: [],
 };

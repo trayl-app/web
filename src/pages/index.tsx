@@ -12,14 +12,17 @@ const Home: NextPage = () => (
     </Head>
 
     <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-      <h1 className="text-6xl font-bold">
+      <h1 className="text-6xl font-satoshi font-bold">
         Welcome to{' '}
         <a className="text-brand-primary" href="https://nextjs.org">
           Next.js!
         </a>
       </h1>
 
-      <Button variant="secondary-light" sx="rounded-full hover:shadow-xl">
+      <Button
+        variant="secondary-light"
+        sx="rounded-full hover:shadow-xl font-satoshi font-light"
+      >
         ciao
       </Button>
 
