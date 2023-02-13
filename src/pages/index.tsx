@@ -1,5 +1,4 @@
 import React from 'react';
-import { Box, Button, Icon } from '@mountain-app/web-components';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -18,17 +17,6 @@ const Home: NextPage = () => (
           Next.js!
         </a>
       </h1>
-
-      <Box sx="border border-brand-accent rounded-lg p-8">
-        <Button
-          leadingIcon={Icon.BOOKMARK}
-          variant="tertiary"
-          size="small"
-          sx="font-satoshi"
-        >
-          ciao
-        </Button>
-      </Box>
 
       <p className="mt-3 text-2xl">
         Get started by editing{' '}
