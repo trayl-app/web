@@ -20,5 +20,7 @@
     "project": "./tsconfig.eslint.json"
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
-  "rules": {}
+  "rules": {
+    "import/prefer-default-export": "off"
+  }
 }

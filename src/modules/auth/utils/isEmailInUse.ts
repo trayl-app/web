@@ -12,7 +12,7 @@ type IsEmailInUse = {
  * and the list of providers linked to the email.
  * @param {string} email - The email to check.
  * @return {Promise<IsEmailInUse>} True if the email is linked, and the list of providers linked to the email.
- * @throws {Error} If the email is not valid.
+ * @throws {FirebaseError} If the email is not valid.
  */
 const isEmailInUse = async (email: string): Promise<IsEmailInUse> => {
   try {

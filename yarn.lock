@@ -1019,10 +1019,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@mountain-app/web-components@1.3.5":
-  version "1.3.5"
-  resolved "https://npm.pkg.github.com/download/@mountain-app/web-components/1.3.5/d881ff8c162a725cd1c77f878cb0489dc8126047#d881ff8c162a725cd1c77f878cb0489dc8126047"
-  integrity sha512-cr2hirbM4ejf9XQIvGL2Zn7qO+SxVAEYi/erxArNqemLkTSYy7LmFVRgoQBwdY/H9ZKqjdnc1+0coh7td4MHVw==
+"@mountain-app/web-components@1.3.6":
+  version "1.3.6"
+  resolved "https://npm.pkg.github.com/download/@mountain-app/web-components/1.3.6/a71c61654830a09dfdfdd14b9b501ba1616f50a4#a71c61654830a09dfdfdd14b9b501ba1616f50a4"
+  integrity sha512-r58JqIPull+5ryJMT2H7uKehVX9oShfj/V+kDvEUCKki5jBSeWCmbbkiXSHqgN+1LK1LsAH+E2qhRhj1Zr/VTw==
   dependencies:
     tailwind-merge "1.6.0"
 
