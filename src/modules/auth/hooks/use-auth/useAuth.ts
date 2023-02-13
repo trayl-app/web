@@ -9,7 +9,6 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
-  getIdToken,
   User,
 } from 'firebase/auth';
 import { httpsCallable } from 'firebase/functions';
@@ -48,7 +47,7 @@ const useAuth = (auth: Auth, options?: AuthOptions): AuthHook => {
       try {
         const credential = await signInWithPopup(auth, provider);
 
-        const token = await getIdToken(credential.user);
+        // const token = await getIdToken(credential.user);
 
         const additionalUserInfo = getAdditionalUserInfo(credential);
 
